@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science</title>
+    <style>
+        body {
+            font-family: 'Papyrus';
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('https://www.snuniv.ac.in/pg-evening-course/assets/img/hero-bg.jpg');
+        }
+
+        .left {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+
+        }
+
+        .left div {
+            text-align: center;
+            /* text-shadow: 10px 5px 10px rgb(0, 255, 255); */
+
+        }
+
+        img {
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+
+        .mid {
+            /* border: 2px solid white; */
+            display: block;
+            width: 750px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(84, 61, 11);
+            box-shadow: 8px 8px 8px 0px rgb(163, 100, 28);
+        }
+
+        .right {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        .btn {
+            font-family: 'Papyrus';
+            padding: 5px 3px;
+            margin: 12px 10px;
+            color: white;
+            background-color: rgb(133, 97, 39);
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: rgb(92, 92, 92);
+            background-color: rgb(251, 235, 206);
+            box-shadow: 8px 8px 8px 0px rgb(163, 120, 28);
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 1670px;
+            height: 620px;
+            border-radius: 30px;
+            margin: 110px 90px;
+            padding: 30px;
+            box-shadow: 8px 8px 8px 0px rgb(111, 65, 13);
+            text-shadow: 10px 5px 10px rgb(69, 40, 5);
+            font-size: 25px;
+
+        }
+
+        .container h2:hover, h3:hover, ul:hover, p:hover
+        {
+            color: saddlebrown;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+        }
+
+        .image1
+        {
+            position: absolute;
+            top: 500px;
+            right: 500px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 8px 8px 8px 0px rgb(111, 65, 13);
+
+        }
+
+        .image2
+        {
+            position: absolute;
+            top: 500px;
+            right: 350px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 8px 8px 8px 0px rgb(111, 65, 13);
+        }
+
+        .image1:hover,
+        .image2:hover
+        {
+            border: 3px solid black;
+            box-shadow: 14px 14px 14px 0px saddlebrown;
+        }
+
+        footer {
+            
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <div class="left">
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Sister_Nivedita_University_Logo.png/220px-Sister_Nivedita_University_Logo.png">
+            <div>Sister Nivedita University</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="homePage.html" >Home</a></li>
+                <li><a href="academics.html" target = "_blank" class="active">Academics</a></li>
+                <li><a href="admission.html" target = "_blank">Admission</a></li>
+                <li><a href="gallery.html" target = "_blank">Gallery</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Computer Science Department</h2>
+        <p>The Computer Science department at Sister Nivedita University is dedicated to developing the next generation of software engineers, system architects, and data scientists. The curriculum covers a wide range of topics, including programming, algorithms, machine learning, and database management.</p>
+
+        <h3>Faculty</h3>
+        <ul>
+            <li>Dr. Anirban Mitra - Head of the Department of Computer Science</li>
+            <li>Dr. Debasis Mazumdar - Professor of Data Science</li>
+        </ul>
+
+        <h3>Timetable</h3>
+        <p>Monday: 8:00 AM - 1:00 PM</p>
+        <p>Tuesday, Thursday, Friday: 8:00 AM - 10:00 AM</p>
+        <div class="image1">
+            <img src="https://www.snuniv.ac.in/images/employee/Anirban-Mitra3.jpg" alt="Anirban Mitra">
+        </div>
+        <div class="image2">
+            <img src="https://www.snuniv.ac.in/images/employee/Debasish-Majumdar-CSE.jpg" alt="Debasis Mazumdar">
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Sister Nivedita University (By Shrestha)
+    </footer>
+</body>
+</html>

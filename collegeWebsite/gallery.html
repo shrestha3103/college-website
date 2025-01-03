@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Papyrus';
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('https://www.snuniv.ac.in/pg-evening-course/assets/img/hero-bg.jpg');
+        }
+
+        .left {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+
+        }
+
+        .left div {
+            text-align: center;
+            /* text-shadow: 10px 5px 10px rgb(0, 255, 255); */
+
+        }
+
+        .logo {
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+
+        .mid {
+            /* border: 2px solid white; */
+            display: block;
+            width: 750px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+
+        .navbar li a:hover, 
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(84, 61, 11);
+            box-shadow: 8px 8px 8px 0px rgb(163, 100, 28);
+        }
+
+        .right {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        .btn {
+            font-family: 'Papyrus';
+            padding: 5px 3px;
+            margin: 12px 10px;
+            color: white;
+            background-color: rgb(133, 97, 39);
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: rgb(92, 92, 92);
+            background-color: rgb(251, 235, 206);
+            box-shadow: 8px 8px 8px 0px rgb(163, 120, 28);
+            
+        }
+
+        .container {
+            border: 2px solid rgb(64, 31, 8);
+            width: 1670px;
+            height: 590px;
+            border-radius: 30px;
+            margin: 110px 90px;
+            padding: 30px;
+            box-shadow: 8px 8px 8px 0px rgb(111, 65, 13);
+            text-shadow: 10px 5px 10px rgb(69, 40, 5);
+            font-size: 25px;
+
+        }
+        
+        .image
+        {
+            width: 300px;
+            border-radius: 15px;
+            border: 1px solid saddlebrown;
+            margin: 10px 35px;
+            padding: 20px;
+            box-shadow: 5px 5px 3px 0px rgb(111, 65, 13);
+
+        }
+
+        .image:hover
+        {
+            border: 3px solid saddlebrown;
+            box-shadow: 10px 10px 5px 0px rgb(111, 65, 13);
+        }
+
+        footer {
+            
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <div class="left">
+
+            <img class="logo"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Sister_Nivedita_University_Logo.png/220px-Sister_Nivedita_University_Logo.png">
+            <div>Sister Nivedita University</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="academics.html" target = "_blank">Academics</a></li>
+                <li><a href="admission.html" target = "_blank">Admission</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <img src="https://i.ytimg.com/vi/k_hCOD6XvvQ/maxresdefault.jpg" alt="Image1" class="image" >
+        <img src="https://www.snuniv.ac.in/notice/1556792534_satyajit-ray-birthday-tribute_thumb.jpg" alt="Image2" class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2j-o5NfOQHNI0hPENCZkKselcp1GPXj39Qw&s" alt="Image3" class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJFu_4EYZ8Rsd2Hnaum3whiLBGa8dXawMXw&s" alt="Image4" class="image">
+        <img src="https://www.snuniv.ac.in/notice/australian-delegation-visit-to-snu.jpg" alt="Image5" class="image">
+        <img src="https://images.click.in/classifieds/images/177/27_08_2021_17_55_49_ed04385f3efabef2f521d645882bdd4f_h.jpg" alt="Image6" class="image">
+        <img src="https://images.shiksha.com/mediadata/images/1626941298phpnGOnKp.jpeg" alt="Image7" class="image">
+        <img src="https://www.snuniv.ac.in/notice/images/20210615_083305.jpg" alt="Image8" class="image">
+    </div>
+    <footer>
+        &copy; 2024 Sister Nivedita University (By Shrestha)
+    </footer>
+</body>
+</html>

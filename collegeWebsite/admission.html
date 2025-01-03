@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <style>
+        body {
+            font-family: 'Papyrus';
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('https://www.snuniv.ac.in/pg-evening-course/assets/img/hero-bg.jpg');
+        }
+
+        .left {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+
+        }
+
+        .left div {
+            text-align: center;
+            /* text-shadow: 10px 5px 10px rgb(0, 255, 255); */
+
+        }
+
+        img {
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+
+        .mid {
+            /* border: 2px solid white; */
+            display: block;
+            width: 750px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(84, 61, 11);
+            box-shadow: 8px 8px 8px 0px rgb(163, 100, 28);
+        }
+
+        .right {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        .btn {
+            font-family: 'Papyrus';
+            padding: 5px 3px;
+            margin: 12px 10px;
+            color: white;
+            background-color: rgb(133, 97, 39);
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: rgb(92, 92, 92);
+            background-color: rgb(251, 235, 206);
+            box-shadow: 8px 8px 8px 0px rgb(163, 120, 28);
+        }
+
+
+        .container {
+            border: 2px solid black;
+            width: 680px;
+            height: 630px;
+            border-radius: 30px;
+            margin: 100px 80px;
+            padding: 30px;
+            box-shadow: 8px 8px 8px 0px rgb(111, 65, 13);
+            text-shadow: 10px 5px 10px rgb(69, 40, 5);
+
+        }
+
+        .apply {
+            width: 300px;
+        }
+
+        .instructions {
+            position: absolute;
+            right: 120px;
+            top: 170px;
+            font-size: 25px;
+            text-shadow: 7px 2px 10px rgb(1, 5, 5);
+            width: 820px;
+
+            color: saddlebrown;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+
+        }
+
+        .instructions:hover
+        {
+            color: rgb(195, 147, 110);
+
+        }
+
+        footer {
+
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Sister_Nivedita_University_Logo.png/220px-Sister_Nivedita_University_Logo.png">
+            <div>Sister Nivedita University</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="academics.html" target="_blank">Academics</a></li>
+                <li><a href="admission.html" class="active">Admission</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Admissions Open for 2024-25</h1>
+        <form action="noaction.php">
+            <div class="name">
+                Name: <input type="text" name="myName" id="name" placeholder="Enter Your Name" class="btn">
+            </div>
+            <div class="email">
+                Email: <input type="email" name="myEmail" id="mail" placeholder="Enter Email Address" class="btn">
+            </div>
+            <div class="mob">
+                Mobile Number: <input type="number" name="myNumber" id="number" placeholder="Your Mobile Number"
+                    class="btn">
+            </div>
+            <div class="address">
+                Address: <input type="text" name="myAddress" id="address" placeholder="Enter Your Address" class="btn">
+            </div>
+            <div class="dept">
+                Department: <select name="FavDept" id="dept" placeholder="Department" class="btn">
+                    <option value="science">Science</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="arts">Arts</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="state">
+                State: <input type="text" name="myState" id="state" placeholder="Enter Your State" class="btn">
+            </div>
+            <div class="checkbox">
+                I agree to receive information by signing up on Sister Nivedita University *<input type="checkbox"
+                    name="myAgreement" id="check" class="btn" checked>
+            </div>
+            <div class="apply">
+                <input type="submit" value="Apply Now" class="btn">
+                <input type="reset" value="Reset All" class="btn">
+            </div>
+            <h1>Hurry Up! Only Few Slots are Available!</h1>
+        </form>
+    </div>
+    <div class="instructions">
+        <h1>Instructions</h1>
+        <div>
+            <ul>
+                <li>The online application is for admission to programmes offered in Sister Nivedita University.</li>
+                <li>Email ID submitted at the time of registration will be used for all correspondences until enrolment
+                    is completed. Change in Email I>D will NOT be permitted under any circumstances.</li>
+                <li>
+                    <dl>
+                        <dt>Sister Nivedita University Query Management System:</dt>
+                        <dd>Applicants are strongly advised to use the Sister Nivedita University Enquiry Form given in
+                            the Home Page, rather than an email, to get a quick response.</dd>
+                    </dl>
+                </li>
+                <ul>
+                    <li>Fill up the Enquiry Form given in the <a href="homePage.html">Home</a> Page</li>
+                    <li>Submit the Form by hitting the Submit Now button</li>
+                    <li>One of our Assistant will guide you thoroughly via call or email</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Sister Nivedita University (By Shrestha)
+    </footer>
+</body>
+
+</html>
